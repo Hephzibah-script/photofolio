@@ -1,0 +1,185 @@
+html {
+    box-sizing: border-box
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Corbel", Arial, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+h1{
+    letter-spacing: 6px;
+}
+
+a{
+    color: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* panel, center and opacity of menu */
+.m-panel {
+    margin: 16px 0;
+    padding: 128px 16px;
+}
+
+.m-center {
+    text-align: center !important;
+}
+
+.m-opacity, .m-hover-opacity:hover {
+    opacity: 0.60;
+}
+
+/* Header text */
+.m-xlarge {
+    font-size: 24px !important;
+}
+
+.m-padding {
+    padding: 32px 0 !important;
+}
+
+.m-center .m-bar {
+    display: inline-block;
+    width: auto;
+}
+
+.m-border{
+ border: 1px solid #ccc;
+}
+
+.m-bar{
+    overflow: hidden;
+}
+
+.m-bar .m-btn{
+white-space: normal;
+}
+
+.m-bar .m-bar-item{
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+.m-btn{
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.m-lightgrey{
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+
+.m-btn:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+
+/* Content area */
+.m-grayscale{
+    filter: grayscale(100%);
+}
+
+.m3-row-padding{
+    padding: 0 8px;
+}
+
+.m3-row-padding::before{
+    content: ">>";
+    display: table;
+    clear: both;
+}
+
+.m3-row-padding::after{
+    content: ">>";
+    display: table;
+    clear: both;
+}
+
+.m3-row-padding > .m3-half {
+    padding: 0 8px;
+}
+
+.m3-half{
+    float: left;
+}
+
+.m3-row-padding > .m3-other-half {
+    padding: 0 8px;
+}
+
+.m3-other-half{
+    float: left;
+}
+
+.m3-row-padding img {
+    margin-bottom: 12px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* End of Content*/
+
+
+/* Footer */
+.f-lightgrey{
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+}
+
+.f-padding {
+    padding: 64px 0 !important;
+}
+
+.f-large{
+    font-size: 18px !important;
+}
+
+.f-container, .m-panel{
+    padding: 0 16px;
+}
+
+.f-container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.f-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+@media (min-width: 601px) {
+    .w3-col.m6, .m3-half {
+        width: 49.99999%;
+    }
+}
